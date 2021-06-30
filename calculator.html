@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="calcul.css"  /> 
+	<script type="text/javascript" src="script.js"></script>  
+    <title>calculator</title>
+
+</head>
+
+<body>
+    <h1> calculator </h1>
+    <form>
+        <table class="calculatrice">
+            <tr>
+	            <td  colspan="4" class="redesign" >
+                    <input type = "text" size=30  class="butdesign"  id="res" value=""> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+	                <input  type="reset" class="stylebutton" value="CE" >
+	            </td>
+                <td>
+	                <input type ="button" class="stylebutton" value ="<---" onClick="delet()">
+	            </td>
+                <td>
+	                <input type ="button" class="stylebutton" value ="%"onClick="ajout('%')"> 
+	            </td>
+                <td>
+	                <input type ="button" class="stylebutton" value ="+" onClick="ajout('+')"> 
+	            </td>
+            </tr>
+            <tr>
+                <td> 
+	                <input type ="button" class="stylebutton" value ="7"onClick="ajout('7')">
+	            </td>
+                <td>
+	                <input type ="button" class="stylebutton" value ="8"onClick="ajout('8')">
+	            </td>
+                <td>
+	                <input type ="button"class="stylebutton" value ="9"onClick="ajout('9')">
+	            </td>
+                <td>
+	                <input type ="button" class="stylebutton" value ="-"onClick="ajout('-')">
+	            </td>
+            </tr>
+            <tr>
+                <td>
+	                <input type ="button" class="stylebutton" value ="4"onClick="ajout('4')">
+	            </td>
+                <td>
+	                <input type ="button"  class="stylebutton" value ="5"onClick="ajout('5')">
+	            </td>
+                <td>
+	                <input type ="button" class="stylebutton" value ="6"onClick="ajout('6')">
+	            </td>
+                <td>
+	                <input type ="button" class="stylebutton" value ="*"onClick="ajout('*')">
+	            </td>
+            </tr>
+            <tr>
+                <td >
+	                <input type ="button" class="stylebutton" value ="1" onClick="ajout('1')">
+	            </td>
+                <td>
+	                <input type ="button"  class="stylebutton" value ="2"onClick="ajout('2')">
+	            </td>
+                <td>
+	                <input type ="button" class="stylebutton" value ="3"onClick="ajout('3')">
+	            </td>
+                <td>
+	                <input type ="button"  class="stylebutton" value ="/"onClick="ajout('/')">
+	            </td>
+            </tr>
+            <tr>
+                <td>
+	                <input type ="button" class="stylebutton" value ="0" onClick="ajout('0')" >
+	            </td>
+                <td>
+	                <input type ="button" class="stylebutton" value ="-+" onClick ="oppose('+-')">
+	            </td>
+                <td>
+	                <input type ="button" class="stylebutton" value =","onClick="ajout(',')">
+	            </td>
+                <td > 
+	                <input type ="button" class="stylebutton" value ="=" onClick="calcul()">
+	            </td>
+            </tr>
+ 
+
+
+        </table>
+    </form >
+</body>
+</html> 
